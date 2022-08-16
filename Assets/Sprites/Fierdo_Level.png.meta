@@ -116,8 +116,8 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: 1, y: -8}
-        - {x: 1, y: -1}
+      - - {x: -1, y: -8}
+        - {x: -1, y: -1}
         - {x: 8, y: -1}
         - {x: 8, y: -8}
       tessellationDetail: 0
@@ -195,8 +195,8 @@ TextureImporter:
       physicsShape:
       - - {x: -8, y: -8}
         - {x: -8, y: -1}
-        - {x: -1, y: -1}
-        - {x: -1, y: -8}
+        - {x: 1, y: -1}
+        - {x: 1, y: -8}
       tessellationDetail: 0
       bones: []
       spriteID: bf401697cc22a8546b85befbef8a2783
@@ -316,8 +316,8 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: 0, y: -8}
-        - {x: 0, y: 1}
+      - - {x: -1, y: -8}
+        - {x: -1, y: 1}
         - {x: -8, y: 1}
         - {x: -8, y: 8}
         - {x: 8, y: 8}
@@ -370,8 +370,8 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: 1, y: 1}
-        - {x: 1, y: 8}
+      - - {x: -1, y: 1}
+        - {x: -1, y: 8}
         - {x: 8, y: 8}
         - {x: 8, y: 1}
       tessellationDetail: 0
@@ -422,12 +422,112 @@ TextureImporter:
       physicsShape:
       - - {x: -8, y: 1}
         - {x: -8, y: 8}
-        - {x: -1, y: 8}
-        - {x: -1, y: 1}
+        - {x: 1, y: 8}
+        - {x: 1, y: 1}
       tessellationDetail: 0
       bones: []
       spriteID: 133ec4bba5c35774ba086014f184ae7a
       internalID: -533070833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fierdo_Level_Chain
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.53}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -2, y: -7}
+        - {x: -2, y: 8}
+        - {x: 2, y: 8}
+        - {x: 2, y: -7}
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcadbc10a44d4494eb9cd6417d66ba9e
+      internalID: 688276338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fierdo_Level_Weight
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -7, y: -8}
+        - {x: -7, y: 4}
+        - {x: 7, y: 4}
+        - {x: 7, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e86f45890bfc8804ca790d743e96524a
+      internalID: -1988408551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fierdo_Level_Pipe
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -2, y: -2}
+        - {x: -2, y: 2}
+        - {x: 2, y: 2}
+        - {x: 2, y: -2}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2139f7dc9a677f45890d3f7bded30a9
+      internalID: -1916204230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fierdo_Level_Platform
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 144
+        width: 32
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -13, y: -8}
+        - {x: -13, y: -6}
+        - {x: 13, y: -6}
+        - {x: 13, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b510aefd60c1ad4ab70141e27fdfb63
+      internalID: -1941584897
       vertices: []
       indices: 
       edges: []
@@ -448,7 +548,6 @@ TextureImporter:
       Fierdo_Level_1_BottomRight: -533070833
       Fiordo_Level_3: 528281296
       Fierdo_Level_1_CornerBottomLeft: 438283012
-      Fierdo_Level_0: -1392560179
       Fierdo_Level_1_CornerBottomRight: 304079428
       Fierdo_Level_1_TopLeft: 754348908
       Fiordo_Level_2: 785070628
@@ -458,10 +557,14 @@ TextureImporter:
       Fierdo_Level_1_TopRight: -661065325
       Fierdo_Level_1: -951566784
       Fierdo_Level_1_CornerTopLeft: -415016525
+      Fierdo_Level_Weight: -1988408551
       Fierdo_Level_1_TopCenter: -1725170407
       Fierdo_Level_1_CornerTopRight: -1937563535
+      Fierdo_Level_Chain: -1392560179
+      Fierdo_Level_Pipe: -1916204230
       Fierdo_Level_1_CenterLeft: -1671673341
       Fiordo_Level_1_Portal: -681629792
+      Fierdo_Level_Platform: -1941584897
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
