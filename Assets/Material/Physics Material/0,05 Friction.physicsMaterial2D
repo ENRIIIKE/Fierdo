@@ -6,6 +6,6 @@ PhysicsMaterial2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Pipes
-  friction: 20
+  m_Name: 0,05 Friction
+  friction: 0.05
   bounciness: 0
