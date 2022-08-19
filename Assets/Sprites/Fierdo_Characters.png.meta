@@ -363,8 +363,8 @@ TextureImporter:
         y: 144
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.47, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -388,8 +388,8 @@ TextureImporter:
         y: 144
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.47, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -647,6 +647,31 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Fierdo_Characters_Falling
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -6, y: -8}
+        - {x: -6, y: 6}
+        - {x: 6, y: 6}
+        - {x: 6, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00f35f6ddde52d04283f56095b89948b
+      internalID: -467922998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -677,6 +702,7 @@ TextureImporter:
       Fierdo_Characters_23: -535443057
       Fierdo_Characters_27: 295823749
       Fierdo_Characters_Walk_7: -1713270288
+      Fierdo_Characters_Falling: -467922998
       Fierdo_Characters_8: -491617894
       Fierdo_Characters_9: -1582838034
       Fierdo_Characters_26: 356374087
@@ -687,8 +713,8 @@ TextureImporter:
       Fierdo_Characters_0: 1113065167
       Fierdo_Characters_Walk_5: -189423852
       Fierdo_Characters_Walk_1: -1105571863
-      Fierdo_Characters_2: 2116867927
       Fierdo_Characters_10: -1245925689
+      Fierdo_Characters_2: 2116867927
       Fierdo_Characters_Walk_2: 1323516390
       Fierdo_Characters_Idle: 1716534124
   spritePackingTag: 
