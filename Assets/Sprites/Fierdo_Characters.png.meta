@@ -104,7 +104,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fierdo_Characters_0
+      name: Slime
       rect:
         serializedVersion: 2
         x: 0
@@ -125,7 +125,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fierdo_Characters_1
+      name: Slime_Jump_1
       rect:
         serializedVersion: 2
         x: 16
@@ -146,7 +146,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fierdo_Characters_2
+      name: Slime_Jump_2
       rect:
         serializedVersion: 2
         x: 32
@@ -167,7 +167,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fierdo_Characters_3
+      name: Slime_Jump_3
       rect:
         serializedVersion: 2
         x: 48
@@ -188,7 +188,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fierdo_Characters_4
+      name: Slime_Jump_4
       rect:
         serializedVersion: 2
         x: 64
@@ -209,7 +209,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fierdo_Characters_5
+      name: Slime_Jump_5
       rect:
         serializedVersion: 2
         x: 80
@@ -230,7 +230,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fierdo_Characters_6
+      name: Slime_Jump_6
       rect:
         serializedVersion: 2
         x: 96
@@ -251,7 +251,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fierdo_Characters_7
+      name: Slime_Jump_7
       rect:
         serializedVersion: 2
         x: 112
@@ -272,7 +272,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fierdo_Characters_8
+      name: Slime_Jump_8
       rect:
         serializedVersion: 2
         x: 128
@@ -293,7 +293,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fierdo_Characters_9
+      name: Slime_Jump_9
       rect:
         serializedVersion: 2
         x: 144
@@ -683,38 +683,38 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Fierdo_Characters_7: 1923322010
+      Slime_Jump_8: -491617894
       Fierdo_Characters_28: -1883635923
       Fierdo_Characters_Walk_4: 318181426
-      Fierdo_Characters_1: 1721701477
+      Slime_Jump_1: 1721701477
       Fierdo_Characters_32: 1450856189
       Fierdo_Characters_Walk_3: -1603865637
       Fierdo_Characters_Walk_8: -1370954129
       Fierdo_Characters_31: 1925066904
       Fierdo_Characters_24: 701134485
       Fierdo_Characters_25: -1846553184
-      Fierdo_Characters_4: -333574497
+      Slime_Jump_5: -924592279
       Fierdo_Characters_30: -1430718614
       Fierdo_Characters_29: -1713023873
       Fierdo_Characters_Walk_6: 1840798723
-      Fierdo_Characters_3: 407193028
-      Fierdo_Characters_6: 852776779
+      Slime_Jump_2: 2116867927
       Fierdo_Characters_23: -535443057
       Fierdo_Characters_27: 295823749
       Fierdo_Characters_Walk_7: -1713270288
       Fierdo_Characters_Falling: -467922998
-      Fierdo_Characters_8: -491617894
-      Fierdo_Characters_9: -1582838034
-      Fierdo_Characters_26: 356374087
+      Slime_Jump_9: -1582838034
       Fierdo_Characters_11: 201851639
+      Fierdo_Characters_26: 356374087
       Fierdo_Characters_Back: -1161394212
+      Slime: 1113065167
+      Slime_Jump_6: 852776779
       Fierdo_Characters_22: -876832846
-      Fierdo_Characters_5: -924592279
-      Fierdo_Characters_0: 1113065167
+      Slime_Jump_3: 407193028
+      Slime_Jump_4: -333574497
       Fierdo_Characters_Walk_5: -189423852
       Fierdo_Characters_Walk_1: -1105571863
       Fierdo_Characters_10: -1245925689
-      Fierdo_Characters_2: 2116867927
+      Slime_Jump_7: 1923322010
       Fierdo_Characters_Walk_2: 1323516390
       Fierdo_Characters_Idle: 1716534124
   spritePackingTag: 
