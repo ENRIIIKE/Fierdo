@@ -5,6 +5,27 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerController : MonoBehaviour
 {
+    #region Singleton
+    //=====Singleton=====
+    private static PlayerController _instance;
+
+    public static PlayerController Instance
+    {
+        get
+        {
+            if (_instance == null)
+            {
+                _instance = FindObjectOfType<PlayerController>();
+                if (_instance == null)
+                {
+                    _instance = new GameObject().AddComponent<PlayerController>();
+                }
+            }
+            return _instance;
+        }
+        private set { _instance = value; }
+    }
+    #endregion
 
     [Header("Movement")]
     public Animator animator;
@@ -13,6 +34,7 @@ public class PlayerController : MonoBehaviour
     public float movementSpeed;
     public float slow;
     public bool isRunning;
+    public bool canMove;
 
     [Header("Jump")]
     public float jumpForce;
@@ -25,6 +47,7 @@ public class PlayerController : MonoBehaviour
     public Transform groundCheckTransform;
     public LayerMask groundMask;
 
+    private Vector2 knockback;
     void FixedUpdate()
     {
         GroundCheck();
@@ -33,6 +56,8 @@ public class PlayerController : MonoBehaviour
     }
     private void Move()
     {
+        if (!canMove) return;
+
         float moveHorizontal = Input.GetAxisRaw("Horizontal");
 
         if (moveHorizontal > 0.1f || moveHorizontal < -0.1f)
@@ -54,7 +79,7 @@ public class PlayerController : MonoBehaviour
                 animator.SetBool("isRunning", true);
             }
         }
-        else
+        else if (canMove)
         {
             rb.velocity = new Vector2(rb.velocity.x / slow, rb.velocity.y);
             animator.SetBool("isRunning", false);
@@ -64,6 +89,8 @@ public class PlayerController : MonoBehaviour
 
     private void Jump()
     {
+        if (!canMove) return;
+
         float moveVertical = Input.GetAxisRaw("Vertical");
 
         if (moveVertical == 0f)
@@ -98,10 +125,33 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("isFalling", true);
             animator.SetBool("isRunning", false);
         }
+
+        if (!canMove && collider != null)
+        {
+            if (rb.velocity.x > 1f) return;
+            canMove = true;
+        }
     }
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(groundCheckTransform.position, circleRadius);
+    }
+
+    public void Knockback(Transform attacker, float knockbackStrength)
+    {
+        canMove = false;
+
+        if (transform.position.x > attacker.position.x)
+        {
+            knockback = (Vector2.right * knockbackStrength) + Vector2.up * 4f;
+        }
+        else if (transform.position.x < attacker.position.x)
+        {
+            knockback = (Vector2.left * knockbackStrength) + Vector2.up * 4f;
+        }
+
+        rb.AddForce(knockback, ForceMode2D.Impulse);
+
     }
 }

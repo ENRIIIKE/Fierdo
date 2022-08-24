@@ -104,18 +104,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Slime
+      name: Slime_Idle_1
       rect:
         serializedVersion: 2
         x: 0
-        y: 160
+        y: 144
         width: 16
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -8, y: -8}
+        - {x: -8, y: 2}
+        - {x: 8, y: 2}
+        - {x: 8, y: -8}
       tessellationDetail: 0
       bones: []
       spriteID: c2b97d49caf93324783e85134a3be3a0
@@ -128,7 +132,7 @@ TextureImporter:
       name: Slime_Jump_1
       rect:
         serializedVersion: 2
-        x: 16
+        x: 0
         y: 160
         width: 16
         height: 16
@@ -149,7 +153,7 @@ TextureImporter:
       name: Slime_Jump_2
       rect:
         serializedVersion: 2
-        x: 32
+        x: 16
         y: 160
         width: 16
         height: 16
@@ -170,7 +174,7 @@ TextureImporter:
       name: Slime_Jump_3
       rect:
         serializedVersion: 2
-        x: 48
+        x: 32
         y: 160
         width: 16
         height: 16
@@ -191,7 +195,7 @@ TextureImporter:
       name: Slime_Jump_4
       rect:
         serializedVersion: 2
-        x: 64
+        x: 48
         y: 160
         width: 16
         height: 16
@@ -212,7 +216,7 @@ TextureImporter:
       name: Slime_Jump_5
       rect:
         serializedVersion: 2
-        x: 80
+        x: 64
         y: 160
         width: 16
         height: 16
@@ -233,7 +237,7 @@ TextureImporter:
       name: Slime_Jump_6
       rect:
         serializedVersion: 2
-        x: 96
+        x: 80
         y: 160
         width: 16
         height: 16
@@ -254,7 +258,7 @@ TextureImporter:
       name: Slime_Jump_7
       rect:
         serializedVersion: 2
-        x: 112
+        x: 96
         y: 160
         width: 16
         height: 16
@@ -275,7 +279,7 @@ TextureImporter:
       name: Slime_Jump_8
       rect:
         serializedVersion: 2
-        x: 128
+        x: 112
         y: 160
         width: 16
         height: 16
@@ -296,7 +300,7 @@ TextureImporter:
       name: Slime_Jump_9
       rect:
         serializedVersion: 2
-        x: 144
+        x: 128
         y: 160
         width: 16
         height: 16
@@ -360,7 +364,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 144
+        y: 96
         width: 16
         height: 16
       alignment: 9
@@ -385,7 +389,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 144
+        y: 96
         width: 16
         height: 16
       alignment: 9
@@ -410,7 +414,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 144
+        y: 96
         width: 16
         height: 16
       alignment: 0
@@ -435,7 +439,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 48
-        y: 144
+        y: 96
         width: 16
         height: 16
       alignment: 0
@@ -460,7 +464,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 144
+        y: 96
         width: 16
         height: 16
       alignment: 0
@@ -485,7 +489,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 80
-        y: 144
+        y: 96
         width: 16
         height: 16
       alignment: 0
@@ -510,7 +514,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 144
+        y: 96
         width: 16
         height: 16
       alignment: 0
@@ -535,7 +539,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 112
-        y: 144
+        y: 96
         width: 16
         height: 16
       alignment: 0
@@ -560,7 +564,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 144
+        y: 96
         width: 16
         height: 16
       alignment: 0
@@ -585,7 +589,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 144
-        y: 144
+        y: 96
         width: 16
         height: 16
       alignment: 0
@@ -652,7 +656,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 128
+        y: 80
         width: 16
         height: 16
       alignment: 0
@@ -668,6 +672,56 @@ TextureImporter:
       bones: []
       spriteID: 00f35f6ddde52d04283f56095b89948b
       internalID: -467922998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -8}
+        - {x: -8, y: 1}
+        - {x: 8, y: 1}
+        - {x: 8, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46044f336d44f53448cf939399e41d91
+      internalID: 1440167519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_Idle_3
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -8}
+        - {x: -8, y: 0}
+        - {x: 8, y: 0}
+        - {x: 8, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c6499bd0de065f419217b6c9ba4e46b
+      internalID: -657391410
       vertices: []
       indices: 
       edges: []
@@ -697,6 +751,7 @@ TextureImporter:
       Fierdo_Characters_30: -1430718614
       Fierdo_Characters_29: -1713023873
       Fierdo_Characters_Walk_6: 1840798723
+      Slime_Idle_1: 1113065167
       Slime_Jump_2: 2116867927
       Fierdo_Characters_23: -535443057
       Fierdo_Characters_27: 295823749
@@ -706,11 +761,12 @@ TextureImporter:
       Fierdo_Characters_11: 201851639
       Fierdo_Characters_26: 356374087
       Fierdo_Characters_Back: -1161394212
-      Slime: 1113065167
+      Slime_Idle_2: 1440167519
       Slime_Jump_6: 852776779
       Fierdo_Characters_22: -876832846
       Slime_Jump_3: 407193028
       Slime_Jump_4: -333574497
+      Slime_Idle_3: -657391410
       Fierdo_Characters_Walk_5: -189423852
       Fierdo_Characters_Walk_1: -1105571863
       Fierdo_Characters_10: -1245925689

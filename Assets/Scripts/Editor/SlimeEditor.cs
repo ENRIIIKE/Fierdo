@@ -11,9 +11,9 @@ public class SlimeEditor : Editor
 
         base.OnInspectorGUI();
 
-        if (GUILayout.Button("Attack"))
+        if (GUILayout.Button("MoveToTarget"))
         {
-            slimeScript.Attack();
+            slimeScript.Move();
         }
     }
 }
