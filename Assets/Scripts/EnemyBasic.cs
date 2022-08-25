@@ -6,6 +6,7 @@ using UnityEngine;
 public abstract class EnemyBasic : MonoBehaviour
 {
     [Header("General")]
+    public Animator animator;
     public Transform player;
     public Rigidbody2D rb;
     public bool showGizmos = false;
@@ -23,6 +24,15 @@ public abstract class EnemyBasic : MonoBehaviour
     public float attackRange;
     public bool playerInRange;
 
+    [Header("Ground Check")]
+    public Transform groundCheckTransform;
+    public float circleRadius;
+    public LayerMask groundMask;
+
+    private void Start()
+    {
+        player = GameObject.Find("Player").transform;
+    }
     public void Update()
     {
         float distance = Vector2.Distance(this.transform.position, player.position);
@@ -85,6 +95,9 @@ public abstract class EnemyBasic : MonoBehaviour
                 Gizmos.color = Color.green;
             }
             Gizmos.DrawWireSphere(transform.position, attackRange);
+
+            Gizmos.color = Color.green;
+            Gizmos.DrawWireSphere(groundCheckTransform.position, circleRadius);
         }
     }
     private IEnumerator AttackDelay()

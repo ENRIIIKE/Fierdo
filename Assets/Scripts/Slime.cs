@@ -1,3 +1,4 @@
+using BehaviorDesigner.Runtime.Tasks.Unity.UnityCharacterController;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,12 +11,16 @@ public class Slime : EnemyBasic
     public float timeToAttackMax;
     private float timeToAttack;
 
+    public float movementSpeedMin;
+    public float movementSpeedMax;
+
     public bool canMove = true;
 
 
     private new void Update()
     {
         Move();
+        GroundCheck();
     }
     public override void Move()
     {
@@ -23,13 +28,15 @@ public class Slime : EnemyBasic
 
         canMove = false;
 
+        movementSpeed = Random.Range(movementSpeedMin, movementSpeedMax);
+
         timeToAttack = Random.Range(timeToAttackMin, timeToAttackMax);
 
-        if (this.transform.position.x > player.position.x)
+        if (transform.position.x > player.position.x)
         {
             rb.AddForce((Vector2.up + Vector2.left) * movementSpeed, ForceMode2D.Impulse);
         }
-        else if (this.transform.position.x < player.position.x)
+        else if (transform.position.x < player.position.x)
         {
             rb.AddForce((Vector2.up + Vector2.right) * movementSpeed, ForceMode2D.Impulse);
         }
@@ -40,5 +47,18 @@ public class Slime : EnemyBasic
     {
         yield return new WaitForSeconds(timeToAttack);
         canMove = true;
+    }
+    private void GroundCheck()
+    {
+        Collider2D collider = Physics2D.OverlapCircle(groundCheckTransform.position, circleRadius, groundMask);
+
+        if (collider != null)
+        {
+            animator.SetBool("isRunning", false);
+        }
+        else
+        {
+            animator.SetBool("isRunning", true);
+        }
     }
 }
