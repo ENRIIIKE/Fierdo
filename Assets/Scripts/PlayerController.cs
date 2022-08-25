@@ -142,12 +142,16 @@ public class PlayerController : MonoBehaviour
     {
         canMove = false;
 
+        rb.velocity = Vector2.zero;
+
         if (transform.position.x > attacker.position.x)
         {
+            Debug.Log("Knockback To Right");
             knockback = (Vector2.right * knockbackStrength) + Vector2.up * 4f;
         }
-        else if (transform.position.x < attacker.position.x)
+        else 
         {
+            Debug.Log("Knockback To Left");
             knockback = (Vector2.left * knockbackStrength) + Vector2.up * 4f;
         }
 

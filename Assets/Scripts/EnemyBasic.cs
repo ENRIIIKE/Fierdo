@@ -41,7 +41,6 @@ public abstract class EnemyBasic : MonoBehaviour
         if (!canAttack) return;
         canAttack = false;
 
-        Debug.Log("Player Damaged");
         //Attack player
 
         PlayerController.Instance.Knockback(transform, knockbackStrength);
