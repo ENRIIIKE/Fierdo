@@ -17,10 +17,10 @@ TagManager:
   - Chain
   - Movable Weight
   - Ground
-  - Slime
+  - Entity
   - PlayerTrigger
   - TriggerArea
-  - 
+  - Entity Barrier
   - 
   - 
   - 

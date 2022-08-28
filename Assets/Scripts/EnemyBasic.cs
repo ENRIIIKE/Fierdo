@@ -6,8 +6,8 @@ using UnityEngine;
 public abstract class EnemyBasic : MonoBehaviour
 {
     [Header("General")]
-    public Animator animator;
     public Transform player;
+    public Animator animator;
     public Rigidbody2D rb;
     public bool showGizmos = false;
 
@@ -15,10 +15,14 @@ public abstract class EnemyBasic : MonoBehaviour
     [Header("Stats")]
     public int health;
     public int damage;
+
     public float attackSpeed;
-    public bool canAttack = true;
     public float movementSpeed;
     public float knockbackStrength;
+
+    public bool canAttack = true;
+    public bool canMove = true;
+    public bool entityDead = false;
 
     [Header("Range")]
     public float attackRange;
@@ -35,7 +39,7 @@ public abstract class EnemyBasic : MonoBehaviour
     }
     public void Update()
     {
-        float distance = Vector2.Distance(this.transform.position, player.position);
+        float distance = Vector2.Distance(transform.position, player.position);
         if (distance < attackRange)
         {
             playerInRange = true;
@@ -44,6 +48,12 @@ public abstract class EnemyBasic : MonoBehaviour
         {
             playerInRange = false;
         }
+
+        if (canMove)
+        {
+            Move();
+        }
+        GroundCheck();
     }
 
     public void Attack()
@@ -51,7 +61,7 @@ public abstract class EnemyBasic : MonoBehaviour
         if (!canAttack) return;
         canAttack = false;
 
-        //Attack player
+        PlayerController.Instance.playerHealth.GetDamage(damage);
 
         PlayerController.Instance.Knockback(transform, knockbackStrength);
 
@@ -71,9 +81,34 @@ public abstract class EnemyBasic : MonoBehaviour
         {
             health = damage;
         }
+
+        CheckHealth();
+    }
+
+    public void CheckHealth()
+    {
+        if (health <= 0)
+        {
+            entityDead = true;
+            canMove = false;
+            //Add death animation;
+        }
     }
 
     public abstract void Move();
+    private void GroundCheck()
+    {
+        Collider2D collider = Physics2D.OverlapCircle(groundCheckTransform.position, circleRadius, groundMask);
+
+        if (collider != null)
+        {
+            animator.SetBool("isRunning", false);
+        }
+        else
+        {
+            animator.SetBool("isRunning", true);
+        }
+    }
 
     public void Destroy()
     {
@@ -82,6 +117,7 @@ public abstract class EnemyBasic : MonoBehaviour
             //Dying animation or just destroy it and instantiate particles etc..;
         }
     }
+
     public void OnDrawGizmosSelected()
     {
         if (showGizmos)

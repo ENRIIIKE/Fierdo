@@ -28,6 +28,7 @@ public class PlayerController : MonoBehaviour
     #endregion
 
     [Header("Movement")]
+    [HideInInspector] public PlayerHealth playerHealth;
     public Animator animator;
     public Rigidbody2D rb;
 
@@ -48,6 +49,11 @@ public class PlayerController : MonoBehaviour
     public LayerMask groundMask;
 
     private Vector2 knockback;
+
+    private void Awake()
+    {
+        playerHealth = GetComponent<PlayerHealth>();
+    }
     void FixedUpdate()
     {
         GroundCheck();
@@ -126,7 +132,7 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("isRunning", false);
         }
 
-        if (!canMove && collider != null)
+        if (!canMove && collider != null && !playerHealth.playerDead)
         {
             if (rb.velocity.x > 1f) return;
             canMove = true;
@@ -140,6 +146,8 @@ public class PlayerController : MonoBehaviour
 
     public void Knockback(Transform attacker, float knockbackStrength)
     {
+        if (playerHealth.playerDead) return;
+
         canMove = false;
 
         rb.velocity = Vector2.zero;

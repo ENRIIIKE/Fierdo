@@ -14,14 +14,7 @@ public class Slime : EnemyBasic
     public float movementSpeedMin;
     public float movementSpeedMax;
 
-    public bool canMove = true;
 
-
-    private new void Update()
-    {
-        Move();
-        GroundCheck();
-    }
     public override void Move()
     {
         if (!canMove) return;
@@ -47,18 +40,5 @@ public class Slime : EnemyBasic
     {
         yield return new WaitForSeconds(timeToAttack);
         canMove = true;
-    }
-    private void GroundCheck()
-    {
-        Collider2D collider = Physics2D.OverlapCircle(groundCheckTransform.position, circleRadius, groundMask);
-
-        if (collider != null)
-        {
-            animator.SetBool("isRunning", false);
-        }
-        else
-        {
-            animator.SetBool("isRunning", true);
-        }
     }
 }

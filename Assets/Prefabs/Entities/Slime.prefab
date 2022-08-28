@@ -223,8 +223,8 @@ MonoBehaviour:
     m_Bits: 2048
   timeToAttackMin: 1.2
   timeToAttackMax: 3.5
-  movementSpeedMin: 110
-  movementSpeedMax: 150
+  movementSpeedMin: 140
+  movementSpeedMax: 170
   canMove: 1
 --- !u!1 &8288322153766291202
 GameObject:

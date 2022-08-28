@@ -549,6 +549,153 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Fierdo_Death_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 941f4ae7aac079946a7cb3757a03e3f7
+      internalID: -1665667690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fierdo_Death_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67adb31206cac874bb76a1fc4e8d9f54
+      internalID: -1286118403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fierdo_Death_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cc848d288a3aa049a796c7ea9676d65
+      internalID: 1660714017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fierdo_Death_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 383f712ed04ffe7428c2afa521e4498b
+      internalID: 1534640434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fierdo_Death_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9560c9f3643b06e438c19395f02b3ad7
+      internalID: 1359671067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fierdo_Death_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10627cd80a189dc4a98e752c6d4b49c4
+      internalID: -398974111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fierdo_Death_7
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e34c253a67adec418ea8d89f199dab3
+      internalID: -1190281579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -561,41 +708,49 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Slime_Jump_8: -491617894
-      Fierdo_Characters_28: -1883635923
-      Slime_Jump_1: 1721701477
-      Fierdo_Characters_32: 1450856189
-      Fierdo_Characters_31: 1925066904
-      Fierdo_Characters_24: 701134485
-      Fierdo_Walk_7: -1713270288
+      Fierdo_Death_7: -1190281579
+      Fierdo_Death_1: -1665667690
+      Utility_Spawner: 391313312
       Fierdo_Characters_25: -1846553184
       Slime_Jump_5: -924592279
-      Fierdo_Idle: 1716534124
-      Fierdo_Characters_30: -1430718614
-      Fierdo_Characters_29: -1713023873
-      Slime_Idle_1: 1113065167
       Fierdo_Falling: -467922998
-      Slime_Jump_2: 2116867927
-      Fierdo_Characters_23: -535443057
       Fierdo_Walk_5: -189423852
+      Fierdo_Death_5: 1359671067
       Fierdo_Characters_27: 295823749
-      Fierdo_Walk_8: -1370954129
-      Slime_Jump_9: -1582838034
+      Fierdo_Death_2: -1286118403
       Fierdo_Characters_11: 201851639
-      Fierdo_Characters_26: 356374087
       Slime_Idle_2: 1440167519
-      Slime_Jump_6: 852776779
-      Fierdo_Characters_22: -876832846
-      Fierdo_Walk_4: 318181426
+      Fierdo_Walk_2: 1323516390
       Slime_Jump_3: 407193028
       Slime_Jump_4: -333574497
       Slime_Idle_3: -657391410
-      Fierdo_Walk_3: -1603865637
-      Fierdo_Walk_2: 1323516390
       Fierdo_Walk_1: -1105571863
       Fierdo_Characters_10: -1245925689
       Slime_Jump_7: 1923322010
       Fierdo_Walk_6: 1840798723
       Fierdo_Back: -1161394212
+      Fierdo_Characters_28: -1883635923
+      Slime_Jump_1: 1721701477
+      Fierdo_Characters_32: 1450856189
+      Fierdo_Death_3: 1660714017
+      Fierdo_Death_4: 1534640434
+      Fierdo_Characters_31: 1925066904
+      Fierdo_Characters_24: 701134485
+      Fierdo_Walk_7: -1713270288
+      Fierdo_Idle: 1716534124
+      Fierdo_Characters_30: -1430718614
+      Fierdo_Characters_29: -1713023873
+      Slime_Idle_1: 1113065167
+      Slime_Jump_2: 2116867927
+      Fierdo_Characters_23: -535443057
+      Fierdo_Walk_8: -1370954129
+      Slime_Jump_9: -1582838034
+      Fierdo_Characters_26: 356374087
+      Slime_Jump_6: 852776779
+      Fierdo_Characters_22: -876832846
+      Fierdo_Walk_4: 318181426
+      Fierdo_Death_6: -398974111
+      Fierdo_Walk_3: -1603865637
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

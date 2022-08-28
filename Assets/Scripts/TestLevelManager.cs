@@ -14,6 +14,7 @@ public class TestLevelManager : MonoBehaviour
     public Transform entityParent;
 
     public List<GameObject> spawnedEntities = new List<GameObject>();
+
     public void ReleaseWeight()
     {
         distanceJoint.enabled = false;
