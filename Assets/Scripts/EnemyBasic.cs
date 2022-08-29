@@ -61,9 +61,9 @@ public abstract class EnemyBasic : MonoBehaviour
         if (!canAttack) return;
         canAttack = false;
 
-        PlayerController.Instance.playerHealth.GetDamage(damage);
-
         PlayerController.Instance.Knockback(transform, knockbackStrength);
+
+        PlayerController.Instance.playerHealth.GetDamage(damage);
 
         StartCoroutine(AttackDelay());
     }

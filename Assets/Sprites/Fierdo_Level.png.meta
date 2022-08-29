@@ -591,7 +591,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -599,6 +599,27 @@ TextureImporter:
       bones: []
       spriteID: 2421c6bbad814844e91f584a2b96dbe5
       internalID: 1229367348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fierdo_Level_MovingPlatform
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 144
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ef395e88cb63c14fb4fb64e43bb7d5f
+      internalID: -534147526
       vertices: []
       indices: 
       edges: []
@@ -620,6 +641,7 @@ TextureImporter:
       Fierdo_Level_1_BottomRight: -533070833
       Fiordo_Level_3: 528281296
       Fierdo_Level_1_CornerBottomLeft: 438283012
+      Fierdo_Level_MovingPlatform: -534147526
       Utility_Spawner: 1229367348
       Fierdo_Level_1_CornerBottomRight: 304079428
       Fierdo_Level_1_TopLeft: 754348908
