@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Net;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -59,6 +60,7 @@ public class PlayerController : MonoBehaviour
         GroundCheck();
         Move();
         Jump();
+
     }
     private void Move()
     {
@@ -95,13 +97,14 @@ public class PlayerController : MonoBehaviour
 
     private void Jump()
     {
-        if (!canMove) return;
+        if (!canMove && jumped) return;
 
         float moveVertical = Input.GetAxisRaw("Vertical");
 
         if (moveVertical == 0f)
         {
             jumped = false;
+            return;
         }
 
         if (jumped) return;

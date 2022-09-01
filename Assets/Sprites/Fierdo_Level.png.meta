@@ -433,7 +433,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fierdo_Level_Chain
+      name: DoubleChain
       rect:
         serializedVersion: 2
         x: 0
@@ -458,7 +458,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fierdo_Level_Weight
+      name: Weight
       rect:
         serializedVersion: 2
         x: 16
@@ -483,7 +483,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fierdo_Level_Pipe
+      name: Pipe
       rect:
         serializedVersion: 2
         x: 32
@@ -508,7 +508,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fierdo_Level_Platform
+      name: Platform
       rect:
         serializedVersion: 2
         x: 48
@@ -533,7 +533,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fierdo_Level_SingleChain
+      name: SingleChain
       rect:
         serializedVersion: 2
         x: 0
@@ -604,7 +604,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fierdo_Level_MovingPlatform
+      name: MovingPlatform
       rect:
         serializedVersion: 2
         x: 80
@@ -612,14 +612,43 @@ TextureImporter:
         width: 32
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -13, y: -5}
+        - {x: -16, y: -2}
+        - {x: -16, y: 0}
+        - {x: -15, y: 1}
+        - {x: 14.957214, y: 1}
+        - {x: 16, y: 0}
+        - {x: 16, y: -2.0521545}
+        - {x: 13, y: -5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ef395e88cb63c14fb4fb64e43bb7d5f
+      internalID: -534147526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodenCrate
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ef395e88cb63c14fb4fb64e43bb7d5f
-      internalID: -534147526
+      spriteID: 08c851ea99ac5f04e836e0b2da2ff596
+      internalID: 1427451874
       vertices: []
       indices: 
       edges: []
@@ -637,30 +666,31 @@ TextureImporter:
     nameFileIdTable:
       Fierdo_Level_1_Center: 717617932
       Fierdo_Level_1_CenterRight: 1922537913
-      Fierdo_Level_SingleChain: 338011933
       Fierdo_Level_1_BottomRight: -533070833
+      Weight: -1988408551
       Fiordo_Level_3: 528281296
       Fierdo_Level_1_CornerBottomLeft: 438283012
-      Fierdo_Level_MovingPlatform: -534147526
       Utility_Spawner: 1229367348
       Fierdo_Level_1_CornerBottomRight: 304079428
       Fierdo_Level_1_TopLeft: 754348908
       Fiordo_Level_2: 785070628
+      MovingPlatform: -534147526
       Fierdo_Level_1_BottomCenter: -2059053258
       Fiordo_Level_1: -795587498
       Fierdo_Level_1_BottomLeft: 1735474361
       Fierdo_Level_1_TopRight: -661065325
       Fierdo_Level_1: -951566784
       Fierdo_Level_1_CornerTopLeft: -415016525
-      Fierdo_Level_Weight: -1988408551
       Fierdo_Level_Chain_Holder: -1711276686
+      DoubleChain: 688276338
       Fierdo_Level_1_TopCenter: -1725170407
+      SingleChain: 338011933
       Fierdo_Level_1_CornerTopRight: -1937563535
-      Fierdo_Level_Chain: -1392560179
-      Fierdo_Level_Pipe: -1916204230
+      WoodenCrate: 1427451874
+      Platform: -1941584897
       Fierdo_Level_1_CenterLeft: -1671673341
       Fiordo_Level_1_Portal: -681629792
-      Fierdo_Level_Platform: -1941584897
+      Pipe: -1916204230
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
