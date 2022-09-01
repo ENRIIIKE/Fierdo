@@ -705,7 +705,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -726,7 +726,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -747,7 +747,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -768,7 +768,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -789,7 +789,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -810,7 +810,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -831,7 +831,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -852,7 +852,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -873,7 +873,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -912,6 +912,8 @@ TextureImporter:
       Fierdo_Characters_27: 295823749
       Fierdo_Holding_Idle: -1647490557
       Fierdo_Death_2: -1286118403
+      Fierdo_Holding_Walk_Rev_2: -1446030587
+      Fierdo_Holding_Walk_Rev_3: -579908227
       Fierdo_Characters_11: 201851639
       Fierdo_Holding_Walk_3: -1326351620
       Slime_Idle_2: 1440167519
@@ -919,7 +921,9 @@ TextureImporter:
       Slime_Jump_3: 407193028
       Slime_Jump_4: -333574497
       Slime_Idle_3: -657391410
+      Fierdo_Holding_Walk_Rev_4: 1658549745
       Fierdo_Walk_1: -1105571863
+      Fierdo_Holding_Walk_Rev_7: -154242502
       Fierdo_Characters_10: -1245925689
       Slime_Jump_7: 1923322010
       Fierdo_Walk_6: 1840798723
@@ -929,6 +933,7 @@ TextureImporter:
       Fierdo_Characters_32: 1450856189
       Fierdo_Death_3: 1660714017
       Fierdo_Death_4: 1534640434
+      Fierdo_Holding_Walk_Rev_8: -1649933876
       Fierdo_Characters_31: 1925066904
       Fierdo_Characters_24: 701134485
       Fierdo_Walk_7: -1713270288
@@ -942,13 +947,17 @@ TextureImporter:
       Fierdo_Walk_8: -1370954129
       Fierdo_Holding_Walk_7: -238401207
       Slime_Jump_9: -1582838034
+      Fierdo_Holding_Walk_Rev_6: -1683504035
       Fierdo_Characters_26: 356374087
+      Fierdo_Holding_Walk_Rev_1: -2113842356
       Slime_Jump_6: 852776779
       Fierdo_Characters_22: -876832846
       Fierdo_Walk_4: 318181426
       Fierdo_Death_6: -398974111
       Fierdo_Walk_3: -1603865637
+      Fierdo_Characters_0: -2027822569
       Fierdo_Holding_Walk_8: 1197756096
+      Fierdo_Holding_Walk_Rev_5: -1747371598
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

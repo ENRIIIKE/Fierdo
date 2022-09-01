@@ -6828,7 +6828,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 0.97}
   m_EdgeRadius: 0
 --- !u!212 &1562061128
 SpriteRenderer:
@@ -6870,7 +6870,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 1427451874, guid: 9d5cc9c5c545c1447b0c8dda82462b23, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -6909,7 +6909,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09f015d773cccd049b984c44bb06a38f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetX: 0.99
+  offsetX: 0.69
 --- !u!50 &1562061131
 Rigidbody2D:
   serializedVersion: 4
@@ -14142,9 +14142,11 @@ MonoBehaviour:
   slow: 2
   isRunning: 0
   canMove: 1
+  canRotate: 0
   jumpForce: 5
   isJumping: 0
   jumped: 0
+  canJump: 1
   grounded: 0
   circleRadius: 0.02
   groundCheckTransform: {fileID: 2008017059}

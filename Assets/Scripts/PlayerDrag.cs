@@ -38,12 +38,16 @@ public class PlayerDrag : MonoBehaviour
         if (dragging)
         {
             foundObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
-
+            foundObject.GetComponent<Collider2D>().enabled = true;
             foundObject.SetParent(null);
+
             dragging = false;
             foundObject = null;
+
             controller.animator.SetBool("isDragging", false);
             controller.movementSpeed = oldSpeed;
+            controller.canRotate = true;
+            controller.canJump = true;
             return;
         }
 
@@ -51,11 +55,11 @@ public class PlayerDrag : MonoBehaviour
         {
             foundObject = collider.transform;
 
-            foundObject.SetParent(transform);
-
             DraggableObject objectDragScript = collider.GetComponent<DraggableObject>();
 
+            foundObject.SetParent(transform);
             foundObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
+            foundObject.GetComponent<Collider2D>().enabled = false;
 
             float offset = objectDragScript.offsetX;
 
@@ -68,8 +72,11 @@ public class PlayerDrag : MonoBehaviour
                 foundObject.position = new Vector2(transform.position.x + offset, transform.position.y);
             }
 
+            controller.canRotate = false;
+            controller.canJump = false;
             controller.movementSpeed = draggingSpeed;
             controller.animator.SetBool("isDragging", true);
+
             dragging = true;
         }
 

@@ -37,11 +37,13 @@ public class PlayerController : MonoBehaviour
     public float slow;
     public bool isRunning;
     public bool canMove;
+    public bool canRotate;
 
     [Header("Jump")]
     public float jumpForce;
     public bool isJumping;
     public bool jumped;
+    public bool canJump;
 
     [Header("Ground")]
     public bool grounded;
@@ -51,9 +53,13 @@ public class PlayerController : MonoBehaviour
 
     private Vector2 knockback;
 
+    private bool playerFacingRight;
+    private bool playerFacingLeft;
+    
     private void Awake()
     {
         playerHealth = GetComponent<PlayerHealth>();
+        canRotate = true;
     }
     void FixedUpdate()
     {
@@ -70,11 +76,11 @@ public class PlayerController : MonoBehaviour
 
         if (moveHorizontal > 0.1f || moveHorizontal < -0.1f)
         {
-            if (moveHorizontal > 0.1f)
+            if (moveHorizontal > 0.1f && canRotate)
             {
                 transform.localScale = new Vector2(1f, 1f);
             }
-            if (moveHorizontal < -0.1f)
+            if (moveHorizontal < -0.1f && canRotate)
             {
                 transform.localScale = new Vector2(-1f, 1f);
             }
@@ -98,6 +104,7 @@ public class PlayerController : MonoBehaviour
     private void Jump()
     {
         if (!canMove && jumped) return;
+        if (!canJump) return;
 
         float moveVertical = Input.GetAxisRaw("Vertical");
 
