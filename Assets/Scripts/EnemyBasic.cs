@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public abstract class EnemyBasic : MonoBehaviour
+public abstract class EnemyBasic : MonoBehaviour, IDamagable
 {
     [Header("General")]
     public Transform player;
@@ -18,7 +18,7 @@ public abstract class EnemyBasic : MonoBehaviour
 
     public float attackSpeed;
     public float movementSpeed;
-    public float knockbackStrength;
+    public int knockbackStrength;
 
     public bool canAttack = true;
     public bool canMove = true;
@@ -61,9 +61,7 @@ public abstract class EnemyBasic : MonoBehaviour
         if (!canAttack) return;
         canAttack = false;
 
-        PlayerController.Instance.Knockback(transform, knockbackStrength);
-
-        PlayerController.Instance.playerHealth.GetDamage(damage);
+        PlayerController.Instance.playerHealth.GetDamage(damage, knockbackStrength, transform);
 
         StartCoroutine(AttackDelay());
     }
@@ -95,7 +93,6 @@ public abstract class EnemyBasic : MonoBehaviour
         }
     }
 
-    public abstract void Move();
     private void GroundCheck()
     {
         Collider2D collider = Physics2D.OverlapCircle(groundCheckTransform.position, circleRadius, groundMask);
@@ -117,6 +114,7 @@ public abstract class EnemyBasic : MonoBehaviour
             //Dying animation or just destroy it and instantiate particles etc..;
         }
     }
+    public abstract void Move();
 
     public void OnDrawGizmosSelected()
     {

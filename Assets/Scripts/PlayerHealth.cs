@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerHealth : MonoBehaviour
+public class PlayerHealth : MonoBehaviour, IDamagable
 {
     private PlayerController playerController;
 
@@ -17,8 +17,10 @@ public class PlayerHealth : MonoBehaviour
         playerController = GetComponent<PlayerController>();
     }
 
-    public void GetDamage(int damage)
+    public void GetDamage(int damage, int knockbackStrength, Transform attacker)
     {
+        playerController.Knockback(attacker, knockbackStrength);
+
         if (damage > health)
         {
             health = 0;

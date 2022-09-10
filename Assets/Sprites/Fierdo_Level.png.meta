@@ -653,6 +653,111 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Spike
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55b675bdc05689b4f9ee70c2460d8b05
+      internalID: -36500086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saw_Left
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f7f4471bc8ee6b428296782066fa9b8
+      internalID: 183749164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saw_Middle
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 316442ed968959c4392b80925531c6ea
+      internalID: -244631356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saw_Right
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 510a4433c39d686468ff4d3d1f5daa04
+      internalID: 417972978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saw
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6946302cbed4f4d49867472f545d11fd
+      internalID: -972873251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -666,22 +771,26 @@ TextureImporter:
     nameFileIdTable:
       Fierdo_Level_1_Center: 717617932
       Fierdo_Level_1_CenterRight: 1922537913
+      Saw_Left: 183749164
+      Saw: -972873251
       Fierdo_Level_1_BottomRight: -533070833
       Weight: -1988408551
       Fiordo_Level_3: 528281296
       Fierdo_Level_1_CornerBottomLeft: 438283012
       Utility_Spawner: 1229367348
+      Saw_Middle: -951566784
       Fierdo_Level_1_CornerBottomRight: 304079428
       Fierdo_Level_1_TopLeft: 754348908
+      Spike: -36500086
       Fiordo_Level_2: 785070628
       MovingPlatform: -534147526
       Fierdo_Level_1_BottomCenter: -2059053258
       Fiordo_Level_1: -795587498
       Fierdo_Level_1_BottomLeft: 1735474361
       Fierdo_Level_1_TopRight: -661065325
-      Fierdo_Level_1: -951566784
-      Fierdo_Level_1_CornerTopLeft: -415016525
       Fierdo_Level_Chain_Holder: -1711276686
+      Fierdo_Level_1_CornerTopLeft: -415016525
+      Saw_Right: 417972978
       DoubleChain: 688276338
       Fierdo_Level_1_TopCenter: -1725170407
       SingleChain: 338011933

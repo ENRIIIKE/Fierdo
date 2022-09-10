@@ -34,7 +34,6 @@ public class PlayerDrag : MonoBehaviour
     {
         Collider2D collider = Physics2D.OverlapCircle(checkTransform.position, checkRadius, layerMask);
 
-
         if (dragging)
         {
             foundObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;

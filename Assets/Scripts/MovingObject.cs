@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class MovingPlatform : MonoBehaviour
+public class MovingObject : MonoBehaviour
 {
     public List<Transform> waypoints = new List<Transform>();
     private int index = 1;
